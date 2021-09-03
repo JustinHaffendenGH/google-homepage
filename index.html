@@ -1,1 +1,81 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="stylesheet.css">
+
+
+<body>
+
+    <header>
+        <nav>
+            <div class="first">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </div>
+            <div class="second">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <a href="#">
+                    <div onclick="myMenu()" class="menu gsprite">
+                    </div>
+                <a href="#" class="sign-in-button">Sign in</a>
+            </div>
+        </nav>
+
+        <div id="popup" class="popup" style="display: none;">
+            <a href="https://github.com/JustinHaffendenGH">
+                <div><img class="git-hub-image" src="images/github.png"  alt="Girl in a jacketGithub logo"> </div>
+                <div class="icon_text">My Github</div>
+
+            </a>
+            <a href="#">
+                <div class="second sprite"></div>
+                <div class="icon_text">My Website</div>
+            </a>
+            <a href="#">
+                <div class="third sprite"></div>
+                <div class="icon_text">Landing</div>
+            </a>
+            <a href="#">
+                <div class="fourth sprite"></div>
+                <div class="icon_text">Documentation</div>
+            </a>
+            <a href="#">
+                <div class="fifth sprite"></div>
+                <div class="icon_text">Portfolio</div>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pic-search">
+           
+            <div class="google-pic">
+                <img src="./images/google-logo.svg" alt="google main pic" width="272px" height="92px">
+            </div>
+            <div>
+                <form>
+                    <input type="text" name="search" id="search">
+                    <div class="buttons">
+                        <a href="#" id="button-1">Google Search</a>
+                        <a href="#" id="button-2">I'm Feeling Lucky</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>  
+    </main>
+</body>
+
+
+<!-- JavaScript -->
+
+<script>
+    function myMenu() {
+        var x = document.getElementById("popup");
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
